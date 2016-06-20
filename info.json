@@ -1,0 +1,52 @@
+{
+	"category"	: "Visual stimuli",
+	"controls" : [
+		{
+			"type"		: "combobox",
+			"var"		: "HMDtype",
+			"label"		: "Select your HMD device",
+			"options"	: [
+				"Oculus DK1 (1280x800px)",
+				"Oculus DK2 (1920x1080px)",
+				"Oculus Rift 2016 (2160x1200px)",
+				"HTC Vive (2160x1200px)"
+			],
+			"name"		: "HMD_type",
+			"tooltip"	: "HMD optimization"
+		},
+		{
+			"type"		: "line_edit",
+			"var"		: "duration",
+			"label"		: "Duration",
+			"tooltip"	: "Expecting a value in milliseconds, 'keypress' or 'mouseclick'"
+		},
+		{
+			"type"		: "combobox",
+			"var"		: "isVideo",
+			"label"		: "Media file is a video?",
+			"options"	: [
+				"No",
+				"Yes"
+			],
+			"name"		: "HMD_video_active",
+			"tooltip"	: "HMD video active"
+		},
+		{
+			"type"		: "combobox",
+			"var"		: "stereoscopic",
+			"label"		: "Media file is in a side-by-side format?",
+			"options"	: [
+				"No (No 3D depth)",
+				"Yes"
+			],
+			"name"		: "HMD_stereoscopic",
+			"tooltip"	: "Stereoscopic media file"
+		},
+		{
+			"label"		: "Media file",
+			"tooltip"	: "A media file (image or video)",
+			"type"		: "filepool",
+			"var"		: "media_src"
+		}
+	]
+}
